@@ -1,0 +1,535 @@
+
+<html !DOCTYPE>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="guinea pig purchase">
+  <meta name="keywords" content="guinea pig,guinea pig purchase, guinea pig buy">
+  <meta name="author" content="Patricia Betancor Jimenez">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Guinea Pig Nook</title>
+
+  <link rel="icon" href="css/images/icon.ico" type="image/x-icon">
+
+  
+<link rel="stylesheet" type="text/css" href="css/css.css">
+ 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--social icons-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!--bootstrap css-->
+
+
+
+
+
+</script>
+
+
+</head>
+
+
+
+
+<body >
+
+
+ <div class="container">
+
+
+
+<a href="index.html" class="headlink"><header class="header" id="top">
+
+
+	 
+           <h1>The Guinea Pig Nook</h1>
+            
+              
+           <p>The best place to buy a guinea pig</p>
+
+                
+ 
+</header></a>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light ">
+  
+
+  <a class="navbar-brand" ><strong>MENU</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Purchase
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="purchase.html#femalesection">Females</a>
+          <a class="dropdown-item" href="purchase.html#malessection">Males</a>
+          <a class="dropdown-item" href="purchase.html#babiessection">Babies</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="purchase.html#gencon">General conditions</a>
+          
+          </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="care.html">Care</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+     
+    </ul>
+   
+  </div>
+   
+</nav>
+
+
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-4 col-12 text-center">
+<h1 class="text-danger checkout">Checkout</h1>
+</div>
+</div>
+
+
+
+<h4>1.Delivery type</h4>
+
+<form  id="needs-validation" novalidate method="post" action="checkout.php" >  
+
+<div class="row justify-content-center">
+
+ <div class="col-lg-3 col-md-4 col-6 col-xs-6 ">
+  <div class="form-group">
+<button type="button" class="btn btn-dark mx-auto d-block  delivery" name="deliverycollection" value="delivery" required>Delivery</button>
+<div class="invalid-feedback">Select delivery or collection</div>   
+</div>
+</div>
+
+
+
+<div class="col-lg-3 col-md-4 col-6 col-xs-6  ">
+   <div class="form-group">
+<button type="button" class="btn btn-dark mx-auto d-block collection" name="deliverycollection" value="collection" required>Collection</button>
+<div class="invalid-feedback">Select delivery or collection</div>   
+</div>
+
+</div> 
+
+
+
+</div>
+
+
+
+
+
+
+ <div class="deliveryfee">
+
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="deliveryfee" class="custom-control-input"  required value="10£">
+  <label class="custom-control-label" for="customRadio1">I live in Gloucestershire (10£)</label>
+</div>
+
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="deliveryfee" class="custom-control-input"  required value="20£">
+  <label class="custom-control-label" for="customRadio2">I don't live in Gloucestershire (20£)</label>
+</div>
+
+
+</div> 
+
+
+
+
+
+<h4>2.Order summary</h4>
+
+
+<div class="row justify-content-center ordersummary">
+
+
+<div class="col-lg-4 col-md-2 col-6  text-center ">
+
+<p>Items:</p>
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-6 text-center ">
+
+
+
+<script>
+
+
+ window.onload=document.write("<p class='text-center'>" + JSON.parse(localStorage.getItem("totalname")) + "<br><br>" );
+
+
+ </script>
+
+ </div>
+
+<div class="col-lg-4 col-md-6 col-12 text-center ">
+
+
+  
+
+
+  <p class="text-center deliverycost">Delivery cost:</p> 
+
+  
+ <strong><p class="text-center fullprice">Total price: </p> </strong>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<h4>3.Delivery address and contact details</h4>
+
+
+
+
+<div class="row justify-content-center formaddress " >
+
+    
+      <div class="col-lg-5 col-md-7 col-10 "  >
+
+
+
+
+
+
+
+
+<div class="form-group">
+    <label for="name">Name</label>
+  <input class="form-control"  type="text" id="name" name="name" required>
+  <div class="invalid-feedback">Enter your name</div>   
+ 
+</div>
+
+
+<div class="form-group">
+    <label for="name">Surname</label>
+  <input class="form-control"  type="text" id="name" name="surname" required>
+  <div class="invalid-feedback">Enter your surname</div>   
+ 
+</div>
+
+
+
+  <div class="form-group">
+    <label for="emailaddress">Email address</label>
+    <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" name="email" required>
+    <div class="invalid-feedback">Enter e-mail address i.e. name@example.com</div>   
+  </div>
+
+
+
+<div class="form-group">
+    <label for="number">Phone number</label>
+
+
+  <input class="form-control"  type="number" id="number" name="phone" required> 
+  <div class="invalid-feedback">Enter phone number</div>   
+ 
+</div>
+
+
+<div class="form-group">
+    <label for="name">Street name</label>
+  <input class="form-control"  type="text" id="name" name="street" required>
+  <div class="invalid-feedback">Enter your street name</div>   
+ 
+</div>
+
+<div class="form-group">
+    <label for="name">City/Town</label>
+  <input class="form-control"  type="text" id="name" name="city" required>
+  <div class="invalid-feedback">Enter your city/town</div>   
+ 
+</div>
+
+
+<div class="form-group">
+    <label for="name">Post code</label>
+  <input class="form-control"  type="text" id="name" name="postcode" required>
+  <div class="invalid-feedback">Enter your post code</div>   
+ 
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<h4>4.Payment method</h4>
+
+
+<div class="row justify-content-center ">
+
+<div class="col-lg-6 col-md-8 col-12">
+
+<img src="css/images/payment.png" class="mx-auto d-block img-fluid">
+
+</div>
+</div>
+
+
+
+
+<div class="row justify-content-center payment">
+
+ 
+
+  <div class="col-lg-6 col-md-6 col-12 text-center disablefield">
+
+
+
+
+<div class="form-check form-check-inline paymentoption"> 
+  <input class="form-check-input" type="radio" name="paymenttype" id="inlineRadio1" value="Card" required>
+  <label class="form-check-label" for="inlineRadio1">Card</label>
+</div>
+
+
+
+
+<div class="row justify-content-center ">  <!-- first line -->
+<div class="col-lg-9 col-md-9 col-9 text-center">
+
+
+
+
+<div class="form-group">
+
+    <label for="name">Card owner</label>
+  <input class="form-control"  type="text" id="name1" required>
+  <div class="invalid-feedback">Enter card owner</div>   
+ 
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-3 text-center">
+<div class="form-group">
+
+  <label for="number">CVC</label>
+  <input class="form-control"  type="number" id="number1" required> 
+  <div class="invalid-feedback">Enter CVC</div>   
+ </div>
+</div>
+</div>
+
+
+<div class="row justify-content-center ">  <!-- second line -->
+
+  <div class="col-lg-7 col-md-12 col-12 text-center">
+
+<div class="form-group">
+    <label for="number">Card number</label>
+  <input class="form-control"  type="number" id="number2" required> 
+  <div class="invalid-feedback">Enter card number</div>  
+
+</div>
+
+</div>
+
+
+ 
+  <div class="col-lg-5 col-md-12 col-12 text-center">
+
+
+
+<div class="form-group">
+        <label class=" control-label" for="expiry-month">Expiration Date</label>
+       
+          <div class="row justify-content-center">
+           
+              <select class="form-control col-lg-6 col-md-4 col-4" name="expiry-month" id="expiry-month" required>
+                <option value="">MM</option>
+                <option value="01">Jan (01)</option>
+                <option value="02">Feb (02)</option>
+                <option value="03">Mar (03)</option>
+                <option value="04">Apr (04)</option>
+                <option value="05">May (05)</option>
+                <option value="06">June (06)</option>
+                <option value="07">July (07)</option>
+                <option value="08">Aug (08)</option>
+                <option value="09">Sep (09)</option>
+                <option value="10">Oct (10)</option>
+                <option value="11">Nov (11)</option>
+                <option value="12">Dec (12)</option>
+              </select>
+             
+         
+            <div class="col-lg-6 col-md-5 col-4">
+              <select class="form-control" name="expiry-year" id="expiry-year"  required>
+                <option value="">YY</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+              </select>
+              
+            </div>
+<div class="invalid-feedback">Enter month and year</div>  
+          </div> 
+ 
+      
+      </div>
+
+
+
+
+ </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="col-lg-6 col-md-6 col-12 text-center disablefield">
+
+
+
+ <div class="form-check form-check-inline paymentoption"> 
+  <input class="form-check-input" type="radio" name="paymenttype" id="inlineRadio2" value="Paypal" required>
+  <label class="form-check-label" for="inlineRadio2">Paypal</label>
+</div>
+
+
+
+
+
+<div class="row justify-content-center">
+<div class="col-lg-7 col-md-12 col-10 text-center">
+
+ <div class="form-group">
+    <label for="emailaddress">Paypal e-mail address</label>
+    <input type="email" class="form-control" id="emailaddress2" placeholder="name@example.com"  required>
+    <div class="invalid-feedback">Enter e-mail address i.e. name@example.com</div>   
+  </div>
+
+
+</div>
+</div>
+</div>
+  
+ <div class="form-group">
+   <button type="submit" class="btn btn-danger" id="final" name="submit">Buy now</button>
+ </div>
+
+
+ </form> 
+
+
+</div>
+
+ 
+  
+
+
+<a href="#top" class="to-top"><i class="fa fa-chevron-up"></i></a>
+
+</div>
+<!--end container-->
+
+
+
+
+<footer >
+
+
+<div> 
+  <a href="#"><img src="css/images/icon.png" width="5%"></a></br>
+  <p>&copy; copyright 2019 Patricia Betancor Jimenez &#x2618</p>
+</div>
+
+<div class="social">
+
+<ul class="social-icons">
+        <li><a href="https://www.facebook.com" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.twitter.com" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        
+        <li><a href="https://www.youtube.com" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        
+    </ul>
+
+
+
+
+</div>
+ 
+</footer>
+<script src="javascript/JQuery.js"></script><!-- JQuery --> 
+<script src="javascript/JS.js"></script><!-- JavaScript --> 
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><!-- Popper JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><!-- Bootstrap JQ-->
+
+
+
+
+
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div></body>
+
+</html>
+
+
